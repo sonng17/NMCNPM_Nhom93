@@ -44,7 +44,6 @@ public class HoKhauManagePanel extends javax.swing.JPanel {
 
         themMoiBtn = new javax.swing.JButton();
         jtfSearch = new javax.swing.JTextField();
-        tachHoKhauBtn = new javax.swing.JButton();
         chuyenDiBtn = new javax.swing.JButton();
         tableJpn = new javax.swing.JPanel();
 
@@ -63,15 +62,6 @@ public class HoKhauManagePanel extends javax.swing.JPanel {
         jtfSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtfSearchActionPerformed(evt);
-            }
-        });
-
-        tachHoKhauBtn.setBackground(new java.awt.Color(255, 255, 255));
-        tachHoKhauBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        tachHoKhauBtn.setText("Tách HK");
-        tachHoKhauBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tachHoKhauBtnActionPerformed(evt);
             }
         });
 
@@ -106,7 +96,6 @@ public class HoKhauManagePanel extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(themMoiBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(tachHoKhauBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(chuyenDiBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -119,11 +108,9 @@ public class HoKhauManagePanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(themMoiBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(tachHoKhauBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(chuyenDiBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(263, Short.MAX_VALUE))
+                        .addContainerGap(317, Short.MAX_VALUE))
                     .addComponent(tableJpn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -145,13 +132,6 @@ public class HoKhauManagePanel extends javax.swing.JPanel {
         themMoiHoKhau.setResizable(false);
         themMoiHoKhau.setVisible(true);
     }//GEN-LAST:event_themMoiBtnActionPerformed
-
-    private void tachHoKhauBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tachHoKhauBtnActionPerformed
-        TachHoKhau tachHoKhau = new TachHoKhau(this.parentFrame);
-        tachHoKhau.setLocationRelativeTo(null);
-        tachHoKhau.setResizable(false);
-        tachHoKhau.setVisible(true);
-    }//GEN-LAST:event_tachHoKhauBtnActionPerformed
     
     
 
@@ -159,7 +139,6 @@ public class HoKhauManagePanel extends javax.swing.JPanel {
     private javax.swing.JButton chuyenDiBtn;
     private javax.swing.JTextField jtfSearch;
     private javax.swing.JPanel tableJpn;
-    private javax.swing.JButton tachHoKhauBtn;
     private javax.swing.JButton themMoiBtn;
     // End of variables declaration//GEN-END:variables
 

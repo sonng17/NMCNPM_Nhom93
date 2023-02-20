@@ -40,7 +40,6 @@ public class NhanKhauManagePanel extends javax.swing.JPanel {
         tablePanel = new javax.swing.JPanel();
         addNewBtn = new javax.swing.JButton();
         tamTruBtn = new javax.swing.JButton();
-        khaiTuBtn = new javax.swing.JButton();
         jtfSearch = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -81,14 +80,6 @@ public class NhanKhauManagePanel extends javax.swing.JPanel {
             }
         });
 
-        khaiTuBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        khaiTuBtn.setText("Khai Tử");
-        khaiTuBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                khaiTuBtnActionPerformed(evt);
-            }
-        });
-
         jtfSearch.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jtfSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,8 +99,7 @@ public class NhanKhauManagePanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(addNewBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(tamVangBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
-                    .addComponent(tamTruBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(khaiTuBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tamTruBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -126,8 +116,6 @@ public class NhanKhauManagePanel extends javax.swing.JPanel {
                         .addComponent(tamVangBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(tamTruBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(khaiTuBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -154,13 +142,6 @@ public class NhanKhauManagePanel extends javax.swing.JPanel {
         dangKyTamTruJFrame.setVisible(true);
     }//GEN-LAST:event_tamTruBtnActionPerformed
 
-    private void khaiTuBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_khaiTuBtnActionPerformed
-        KhaiTuJFrame khaiTuJFrame = new KhaiTuJFrame(this.parentJFrame);
-        khaiTuJFrame.setLocationRelativeTo(null);
-        khaiTuJFrame.setResizable(false);
-        khaiTuJFrame.setVisible(true);
-    }//GEN-LAST:event_khaiTuBtnActionPerformed
-
     private void jtfSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfSearchActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jtfSearchActionPerformed
@@ -169,7 +150,6 @@ public class NhanKhauManagePanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addNewBtn;
     private javax.swing.JTextField jtfSearch;
-    private javax.swing.JButton khaiTuBtn;
     private javax.swing.JPanel tablePanel;
     private javax.swing.JButton tamTruBtn;
     private javax.swing.JButton tamVangBtn;

@@ -31,7 +31,6 @@
                   <Component id="addNewBtn" alignment="0" max="32767" attributes="0"/>
                   <Component id="tamVangBtn" alignment="0" pref="129" max="32767" attributes="0"/>
                   <Component id="tamTruBtn" alignment="0" max="32767" attributes="0"/>
-                  <Component id="khaiTuBtn" alignment="1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -51,8 +50,6 @@
                       <Component id="tamVangBtn" min="-2" pref="30" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="tamTruBtn" min="-2" pref="30" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="khaiTuBtn" min="-2" pref="30" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -110,17 +107,6 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tamTruBtnActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="khaiTuBtn">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Khai T&#x1eed;"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="khaiTuBtnActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jtfSearch">
